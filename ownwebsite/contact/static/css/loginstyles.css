@@ -1,0 +1,93 @@
+.login-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/2303.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+
+.headtxt{
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.profile_img{
+    margin-top: 50px;
+}
+
+.container{
+    text-align: center;
+}
+
+.form{
+        width: 30%;
+        position: relative;
+        height:75px;
+        overflow: hidden;
+        margin-top: 0px;
+        margin-left: 35%;
+  }
+
+.form input{
+    width: 100%;
+    height: 100%;
+    color: #555555;
+    border: none !important;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.form label{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form label::after{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: -1px;
+    pointer-events: none;
+    border-bottom: 3px solid aqua;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+ .form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: aqua;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.viewbtn{
+    border-radius: 16px;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: aqua;
+    
+}

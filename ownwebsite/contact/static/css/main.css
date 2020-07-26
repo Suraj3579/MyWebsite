@@ -1,0 +1,94 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", "Oxygen", sans-serif;
+  height: 100%;
+}
+
+.main-image {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/nature2.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  /*display: flex;*/
+  text-align: center;
+  justify-content: center;
+}
+
+.main-image-content {
+  font-size: 50px;
+  color: #efefef;
+  font-weight: 600;
+  font-family: "Raleway", Helvetica, sans-serif;
+  padding-top: 100px;
+}
+
+.main-image-content row{
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.main-image-content span {
+  font-size: 50px !important;
+  color: #efefef;
+  font-weight: bolder;
+  font-family: "Raleway", Helvetica, sans-serif;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.h1h {
+  padding-bottom: 40px;
+}
+
+.main-image button {
+  position: static;
+  background-color: transparent;
+  color: #efefef;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.main-image button:hover {
+  color: black;
+  background-color: #efefef;
+}
+
+#godown {
+  padding-top: 10px;
+}
+
+#godown button:hover {
+  color: #efefef;
+  background-color: transparent;
+}
+
+.main-image i:hover {
+  color: aqua !important;
+}
+
+.main-image i {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.profileimg img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+     border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+   border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+.buttond{
+padding-top:20px;
+}

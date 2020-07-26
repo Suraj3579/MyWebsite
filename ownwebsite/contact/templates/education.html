@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+{% load static%}
+{% block content %}
+<section id="education">
+    <div class="container">
+      <h2 class="sub-headers">My Education</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="ei-logos">
+            <a href=""><img src="{% static 'images/stm.jpg' %}" alt="" /></a>
+          </div>
+          <div class="ei-content">Primary Schooling</div>
+        </div>
+        <div class="col-md-3">
+          <div class="ei-logos">
+            <a href=""><img src="{% static 'images/sa.jpg' %}" alt="" /></a>
+          </div>
+          <div class="ei-content">Secondary Schooling</div>
+        </div>
+        <div class="col-md-3">
+          <div class="ei-logos">
+            <a href=""><img src="{% static 'images/fiitjee.jpg' %}" alt="" /></a>
+          </div>
+          <div class="ei-content">JEE Coaching</div>
+        </div>
+        <div class="col-md-3">
+          <div class="ei-logos">
+            <a href=""><img src="{% static 'images/iitg.jpg' %}" alt="" /></a>
+          </div>
+          <div class="ei-content">Bachelor's degree</div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
