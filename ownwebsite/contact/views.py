@@ -21,7 +21,7 @@ def contact(request):
             tem.user_name = form.cleaned_data['user_name']
             tem.user_email = form.cleaned_data['user_email']
             tem.save()
-            messages.info(request, 'Your Query has been Successfully Submitted.')
+            messages.info(request, 'Your Message has been Successfully Submitted.')
             recipients = ['k.surajraj9@gmail.com']
             # print('before sending email')
             send_mail((tem.user_name + ' : ' + tem.user_email + ' : ' + tem.msg_subject), tem.msg_text,
