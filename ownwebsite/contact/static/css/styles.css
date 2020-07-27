@@ -7,7 +7,7 @@ html {
 body {
   font-size: 16px;
   font-family: "Open Sans", "Oxygen", sans-serif;
-  height:100%;
+  height:auto;
   width:100%;
 }
 
@@ -92,6 +92,10 @@ body {
 .main-image i {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.navbar-collapse.in {
+    display: block !important;
 }
 
 .navbar-nav li {
