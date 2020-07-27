@@ -2,83 +2,86 @@
 {% block content%}
 <section id="contactimg">
     <section id="global-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <h1>Let's Connect!</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1>Let's Connect!</h1>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- contact form start -->
     <section id="contact-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="block">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name" />
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Email Address" />
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject" />
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="block">
-              <form>
-                <div class="form-group-2">
-                  <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
-                </div>
-                <button class="btn btn-default" type="submit">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div id="contact-box" class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="block">
-              <h2>Get In Touch!</h2>
-              <ul class="address-block">
-                <li>
-                  <i class="fa fa-envelope-o"></i>Academic Email:
-                  karingal@iitg.ac.in
-                </li>
-                <li>
-                  <i class="fa fa-envelope-o"></i>Personal Email:
-                  k.surajraj9@gmail.com
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <h2>Find me here!</h2>
+        <div class="container">
             <div class="row">
-              <div class="col-md-3">
-                <a href="http://www.linkedin.com/in/SurajRajKaringala"><i class="fa-2x fa fa-linkedin"></i></a>
-              </div>
-              <div class="col-md-3">
-                <a href="http://www.facebook.com/SurajRajKaringala"><i class="fa fa-2x fa-facebook"></i></a>
-              </div>
-              <div class="col-md-3">
-                <a href="http://www.github.com/Suraj3579"><i class="fa fa-2x fa-github"></i></a>
-              </div>
-              <div class="col-md-3">
-                <a href="https://goo.gl/maps/ogDjtNWFgrsUrUt67"><i class="fas fa-2x fa-map-marker-alt"></i></a>
-              </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="block">
+                        <form method = 'post'>
+                             {% csrf_token %}
+
+
+
+                  {% for hidden_field in form.hidden_fields %}
+                    {% if hidden_field.errors %}
+                      <ul>
+                        {% for error in hidden_field.errors %}
+                          <li>(Hidden field {{ hidden_field.name }}) {{ error }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                    {{ hidden_field }}
+                  {% endfor %}
+
+
+                    {% for field in form.visible_fields %}
+                      <div class="form-group">
+                          {{ field }}
+                      </div>
+                    {% endfor %}
+                            <button class="btn btn-default" type="submit">
+                                   Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="block">
+                        <h2>Get In Touch!</h2>
+                        <ul class="address-block">
+                            <li>
+                                <i class="fa fa-envelope-o"></i>Academic Email:
+                                karingal@iitg.ac.in
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>Personal Email:
+                                k.surajraj9@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>Find me here!</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="http://www.linkedin.com/in/SurajRajKaringala"><i class="fa-2x fa fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="http://www.facebook.com/SurajRajKaringala"><i class="fa fa-2x fa-facebook"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="http://www.github.com/Suraj3579"><i class="fa fa-2x fa-github"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="https://goo.gl/maps/ogDjtNWFgrsUrUt67"><i class="fas fa-2x fa-map-marker-alt"></i></a>
+                        </div>
+                    </div>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
     </section>
-  </section>
+</section>
 {% endblock %}

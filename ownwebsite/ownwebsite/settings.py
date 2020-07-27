@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+import socket
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -119,3 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'lykira2468@gmail.com'
+EMAIL_HOST_PASSWORD = 'slyycxseutdagdkn'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
