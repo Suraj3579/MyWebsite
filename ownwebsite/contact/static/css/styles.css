@@ -202,8 +202,9 @@ body {
   display: block;
   height: 3px;
   width: 150px;
-  margin: 20px auto 10px;
-  color: #efefef;
+  margin: 10px auto 10px;
+  color: #efefef !important;
+  border:1px solid;
 }
 .ei-content {
   text-align: center;
