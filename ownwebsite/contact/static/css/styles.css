@@ -188,7 +188,7 @@ body {
   background-attachment: fixed;
   padding-top: 70px;
   padding-bottom: 120px;
-  color: #efefef;
+
 }
 
 #education h2 {
@@ -208,9 +208,9 @@ body {
 }
 .ei-content {
   text-align: center;
-  color: #efefef;
+  color: black !important;
   font-weight: 600;
-  margin-top: 20px;
+
 }
 
 .ei-logos img {
@@ -250,8 +250,9 @@ body {
   display: block;
   height: 3px;
   width: 150px;
-  margin: 20px auto 10px;
+  margin: 10px auto 10px;
   color: black;
+  border:1px solid;
 }
 
 /*--interests--*/
@@ -471,4 +472,12 @@ padding-bottom: 5px;
   background-color: rgb(66, 140, 250);
   border-radius: 16px;
   margin-top: 15px;
+}
+
+.card{
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-deck{
+    margin:0;
 }
