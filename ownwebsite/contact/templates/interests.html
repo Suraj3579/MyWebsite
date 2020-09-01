@@ -1,4 +1,5 @@
 {% extends 'index.html' %}
+{% load static%}
   {% block head %}
   <title>Suraj | Interests</title>
   {% endblock %}
@@ -17,7 +18,13 @@
         <div class="flip-box-inner">
           <div class="flip-box-front-b"><i class="fas fa-2x fa-book"></i></div>
           <div class="flip-box-back">
-            <h2>Back Side</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-4">Projects</div>
+                <div class="col-4">Ongoing Work</div>
+                <div class="col-4">Academics</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -25,12 +32,23 @@
         <div class="flip-box-inner">
           <div class="flip-box-front-c"><i class="fas fa-2x fa-futbol"></i></div>
           <div class="flip-box-back">
-            <div>epl</div>
-            <div>epl</div>
-            <div>epl</div>
-            <div>epl</div>
-            Laliga
-            Psg
+            <div class="container">
+              <div class="row">
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/epl.png' %}" alt=""></a></div>
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/fa1.png' %}" alt=""></a></div>
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/ucl.svg' %}" alt=""></a></div>
+              </div>
+              <div class="row">
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/br.png' %}" alt=""></a></div>
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/manu.png' %}" alt=""></a></div>
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/fpl.jpeg' %}" alt=""></a></div>
+              </div>
+              <div class="row">
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/atp.jpg' %}" alt=""></a></div>
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/f1.jpg' %}" alt=""></a></div>
+                <div class="col-4"><a href="https://www.premierleague.com/"><img style="height:100px; width:100px;" src="{% static 'images/ipl.jpeg' %}" alt=""></a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -38,7 +56,14 @@
         <div class="flip-box-inner">
           <div class="flip-box-front-d"><i class="fas fa-2x fa-calendar-alt"></i></div>
           <div class="flip-box-back">
-            <h2>Back Side</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-3"><a>Daily Time Table</a></div>
+                <div class="col-3"><a>Contests Time Table</a></div>
+                <div class="col-3"><a>Classes Time Table</a></div>
+                <div class="col-3"><a>Weekends Time Table</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -54,7 +79,14 @@
         <div class="flip-box-inner">
           <div class="flip-box-front-f"><i class="fas fa-2x fa-images"></i></div>
           <div class="flip-box-back">
-            <h2>Back Side</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">Public Gallery</div>
+              </div>
+              <div class="row">
+                <div class="col-12">Public Gallery</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -62,7 +94,13 @@
         <div class="flip-box-inner">
           <div class="flip-box-front-g"><i class="fas fa-2x fa-play"></i></div>
           <div class="flip-box-back">
-            <h2>Back Side</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-4"><a>Songs i listen to!!</a></div>
+                <div class="col-4"><a>Video Resources</a></div>
+                <div class="col-4"><a>My Extra Talent xD</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,7 +108,13 @@
         <div class="flip-box-inner">
           <div class="flip-box-front-h"><i class="fas fa-2x fa-download"></i></div>
           <div class="flip-box-back">
-            <h2>Back Side</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-4"><a>Coursera Certificates</a></div>
+                <div class="col-4"><a>Extracurricular Certificates</a></div>
+                <div class="col-4"><a>Personal Certificates</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

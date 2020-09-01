@@ -210,6 +210,7 @@ body {
   text-align: center;
   color: black !important;
   font-weight: 600;
+  padding: 20px;
 
 }
 
@@ -442,9 +443,13 @@ body {
 
 
 .flip-box-back {
-  background-color: gray;
-  color: white;
+  background-color: white;
+  color: black;
   transform: rotateX(180deg);
+}
+
+.flip-box-back a:hover{
+color:aqua;
 }
 /*--contactsection--*/
 
@@ -480,4 +485,8 @@ padding-bottom: 5px;
 }
 .card-deck{
     margin:0;
+}
+
+.lol a:hover{
+color:blue;
 }
